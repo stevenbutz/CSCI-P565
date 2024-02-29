@@ -77,7 +77,7 @@
             const url = `https://ciphers-service-stevenbutz.onrender.com/ciphers/caesar/${encodeURIComponent(text)}/3`;
             const response = await fetch(url);
             const result = await response.json();
-            document.getElementById("cipherResult").innerText = result;
+            document.getElementById("cipherResult").innerText = result.cipher;
         }
     </script>
 </body>
